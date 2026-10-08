@@ -31,7 +31,7 @@ const HeroSection = ({ market = "bangalore" }: Props) => {
             className="mb-10 max-w-xl font-sans text-[1.03rem] font-light leading-[1.72] tracking-[-0.02em] text-[#525252] animate-fade-in-up md:text-[1.15rem]"
             style={{ animationDelay: "0.2s" }}
           >
-            <p>Explore Umrah packages, Hajj guidance, and family travel with Zikhra Tours and Travels in RT Nagar, Bangalore.</p>
+            <p>Discover Umrah packages with flights, comfortable stays, meals, and guided ziyarat. Choose the departure that suits your journey.</p>
           </div>
 
           <div className="flex flex-row items-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.35s' }}>
