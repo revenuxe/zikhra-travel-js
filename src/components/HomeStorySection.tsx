@@ -29,6 +29,19 @@ const HomeStorySection = ({ market = "bangalore", areaName }: Props) => {
           <p>For <strong className="text-foreground font-medium">Hajj enquiries</strong>, ask about the current season and authorised booking route. Places and arrangements depend on official eligibility, quota, permits, and approvals. A travel enquiry does not confirm a Hajj booking or visa.</p>
           <p>Explore our <Link href={projectsIndexPath("bangalore")} className="text-gold hover:underline">illustrative itineraries</Link>, review <Link href={servicesIndexPath("bangalore")} className="text-gold hover:underline">Umrah and travel services</Link>, return to the <Link href="/" className="text-gold hover:underline">Zikhra homepage</Link>, or <Link href="/contact" className="text-gold hover:underline">send your enquiry</Link> for a personalised written quotation.</p>
         </div>
+
+        <nav aria-label="Travel planning resources" className="mt-9 border-t border-border/50 pt-7">
+          <p className="mb-4 text-xs font-sans font-medium uppercase tracking-[0.22em] text-[#626262]">Explore travel planning resources</p>
+          <div className="grid gap-x-6 gap-y-3 sm:grid-cols-2">
+            <Link href="/bangalore/packages/private-umrah" className="font-sans text-sm text-gold hover:underline">Private Umrah from Bangalore</Link>
+            <Link href="/bangalore/packages/umrah-economy" className="font-sans text-sm text-gold hover:underline">Umrah Economy packages</Link>
+            <Link href="/bangalore/services/muslim-friendly-holidays" className="font-sans text-sm text-gold hover:underline">Muslim-friendly holidays</Link>
+            <Link href="/bangalore/destinations/madinah" className="font-sans text-sm text-gold hover:underline">Madinah travel guide</Link>
+            <Link href="/bangalore/destinations/family-travel" className="font-sans text-sm text-gold hover:underline">Family travel guide</Link>
+            <Link href="/bangalore/destinations/travel-preparation" className="font-sans text-sm text-gold hover:underline">Travel preparation guide</Link>
+            <Link href="/bangalore/destinations/ziyarat-visits" className="font-sans text-sm text-gold hover:underline">Ziyarat visits guide</Link>
+          </div>
+        </nav>
       </div>
     </section>
   );
