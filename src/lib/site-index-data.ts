@@ -12,7 +12,6 @@ const mainPages: SiteIndexLink[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
-  { label: "Bangalore", href: "/bangalore" },
   { label: "Bangalore services", href: "/bangalore/services" },
   { label: "Umrah & Hajj packages", href: "/bangalore/packages" },
   { label: "Bangalore travel package costs", href: "/bangalore/travel-package-guide" },
@@ -35,7 +34,7 @@ export function getStaticSiteIndexSections(): SiteIndexSection[] {
       title: "Bangalore areas",
       description: "Local travel planning landing pages in Bangalore.",
       links: [
-        { label: "Bangalore pilgrimage journeys hub", href: "/bangalore" },
+        { label: "Zikhra homepage", href: "/" },
         ...bangaloreAreas.map((a) => ({ label: `${a.name}, Bangalore`, href: `/bangalore/${a.slug}` })),
       ],
     },

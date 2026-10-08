@@ -10,10 +10,6 @@ type NavItem =
   | { icon: typeof Home; label: string; to: string }
   | { icon: null; label: "WhatsApp"; to?: never };
 
-function useBangaloreFunnel(pathname: string | null) {
-  return pathname?.startsWith("/bangalore") ?? false;
-}
-
 function navActive(pathname: string, itemTo: string): boolean {
   if (itemTo === "/") return pathname === "/";
   if (itemTo === "/bangalore") return pathname === "/bangalore" || pathname.startsWith("/bangalore/");
@@ -22,9 +18,8 @@ function navActive(pathname: string, itemTo: string): boolean {
 
 const BottomNav = () => {
   const pathname = usePathname() ?? "";
-  const bangalore = useBangaloreFunnel(pathname);
 
-  const homeTo = bangalore ? "/bangalore" : "/";
+  const homeTo = "/";
   const projectsTo = "/bangalore/journeys";
   const packagesTo = "/bangalore/packages";
 

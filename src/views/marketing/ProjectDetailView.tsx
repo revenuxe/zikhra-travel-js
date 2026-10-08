@@ -18,7 +18,11 @@ export default function ProjectDetailView({ project, market = "bangalore" }: Pro
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <EditorialPageHero title={`${project.title} Travel Planning in ${location}`} meta={<span className="inline-flex items-center gap-1.5"><MapPin className="h-3.5 w-3.5" />{location}</span>} />
+      <EditorialPageHero
+        title={<><span className="block">{project.title}</span><span className="block">Travel Planning</span><span className="block">from Bangalore</span></>}
+        titleClassName="font-sans text-[3.15rem] font-light leading-[0.98] tracking-[-0.07em] text-[#171717] sm:text-6xl lg:text-[4.75rem]"
+        meta={<span className="inline-flex items-center gap-1.5"><MapPin className="h-3.5 w-3.5" />{location}</span>}
+      />
       <section className="section-padding">
         <div className="max-w-2xl mx-auto">
           <p className="font-sans text-foreground/80 text-sm leading-relaxed mb-10">{description}</p>

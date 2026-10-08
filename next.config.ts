@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
   { source: "/all-pages", headers: [{ key: "X-Robots-Tag", value: "noindex, follow" }] }
  ]; },
  async redirects() { return [
+  { source: "/bangalore", destination: "/", permanent: true },
   { source: "/bangalore/destinations", destination: "/bangalore/destinations/makkah", permanent: true },
   { source: "/services/full-home", destination: "/bangalore/services/umrah-packages", permanent: true },
   { source: "/bangalore/services/full-home", destination: "/bangalore/services/umrah-packages", permanent: true },

@@ -17,13 +17,13 @@ const HeroSection = ({ market = "bangalore" }: Props) => {
     <section className="relative isolate overflow-hidden bg-[#f8f8f7] pb-12 pt-28 sm:pb-16 sm:pt-32">
       <HeroBackdrop />
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
-        <div className="max-w-3xl text-left [container-type:inline-size]">
-          <h1 className="mb-8 max-w-full font-sans text-[min(14.5cqw,5.8rem)] font-light leading-[1.04] tracking-[-0.07em] text-[#171717] animate-fade-in-up sm:leading-[0.97]">
+        <div className="max-w-[52rem] text-left">
+          <h1 className="mb-8 font-sans text-[3.15rem] font-light leading-[0.98] tracking-[-0.07em] text-[#171717] animate-fade-in-up sm:text-6xl lg:text-[5.5rem]">
             {market === "bangalore" ? (
               <>
-                <span className="block whitespace-nowrap">Umrah &amp; Hajj</span>{" "}
-                <span className="block whitespace-nowrap">Tours and Travels</span>{" "}
-                <span className="block whitespace-nowrap">from Bangalore</span>
+                <span className="block md:whitespace-nowrap">Umrah &amp; Hajj</span>
+                <span className="block md:whitespace-nowrap">Tours and Travels</span>
+                <span className="block md:whitespace-nowrap">from Bangalore</span>
               </>
             ) : heroTitle}
           </h1>
@@ -57,4 +57,3 @@ const HeroSection = ({ market = "bangalore" }: Props) => {
 };
 
 export default HeroSection;
-

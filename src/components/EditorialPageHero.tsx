@@ -4,21 +4,22 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 type Props = {
-  title: string;
+  title: ReactNode;
   description?: string;
   meta?: ReactNode;
   showCta?: boolean;
   image?: string;
+  titleClassName?: string;
 };
 
 /** Shared light editorial hero for detail pages. */
-export default function EditorialPageHero({ title, description, meta, showCta = true, image }: Props) {
+export default function EditorialPageHero({ title, description, meta, showCta = true, image, titleClassName }: Props) {
   return (
     <section className="relative isolate overflow-hidden bg-[#f8f8f7] pb-12 pt-28 sm:pb-16 sm:pt-32">
       <HeroBackdrop image={image} />
       <div className="relative mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
         <div className="max-w-3xl">
-          <h1 className="max-w-[11ch] font-sans text-[3.35rem] font-light leading-[0.97] tracking-[-0.07em] text-[#171717] sm:text-6xl md:max-w-[13ch] md:text-7xl lg:text-[5.8rem]">
+          <h1 className={titleClassName ?? "max-w-[11ch] font-sans text-[3.35rem] font-light leading-[0.97] tracking-[-0.07em] text-[#171717] sm:text-6xl md:max-w-[13ch] md:text-7xl lg:text-[5.8rem]"}>
             {title}
           </h1>
           {description ? <p className="mt-8 max-w-xl font-sans text-[1.03rem] font-light leading-[1.72] tracking-[-0.02em] text-[#525252] md:text-[1.15rem]">{description}</p> : null}

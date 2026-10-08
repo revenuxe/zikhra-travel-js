@@ -36,7 +36,7 @@ const AreasWeServe = ({ market = "bangalore" }: Props) => {
             Bangalore travel package costs
           </Link>{" "}
           or explore{" "}
-          <Link href="/bangalore" className="text-gold hover:underline">
+          <Link href="/" className="text-gold hover:underline">
             travel planning in Bangalore
           </Link>
           , including Koramangala, Whitefield, Indiranagar, and more.
