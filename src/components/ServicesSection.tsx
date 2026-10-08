@@ -1,4 +1,5 @@
 import { services as travelServices } from "@/lib/services-data";
+import { serviceImageSrcSet } from "@/lib/travel-images";
 import Link from "next/link";
 import type { MarketId } from "@/lib/market-types";
 import { getMarketCopy } from "@/lib/market-copy";
@@ -30,13 +31,16 @@ const ServicesSection = ({ market = "bangalore" }: Props) => {
             <div className="relative w-full aspect-[4/3] max-h-32 overflow-hidden md:max-h-none">
               <img
                 src={svc.image}
+                srcSet={serviceImageSrcSet(svc.image)}
+                sizes="(min-width: 1280px) 300px, (min-width: 768px) 23vw, 46vw"
+                decoding="async"
                 alt={`${svc.title} in ${city}`}
                 loading="lazy"
                 width={640}
-                height={640}
+                height={480}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent" />
             </div>
             <div className="relative z-10 -mt-3 rounded-t-[1rem] bg-white p-4 md:p-6">
               <h3 className="mb-1 font-sans text-sm font-medium text-[#171717] md:text-lg">{svc.title}</h3>

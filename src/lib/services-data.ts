@@ -12,7 +12,7 @@ export type ServiceItem = {
 export const services: ServiceItem[] = [
   {
     "id": "umrah-packages",
-    "image": "/travel/makkah.jpg",
+    "image": "/travel/makkah.webp",
     "title": "Umrah Packages",
     "subtitle": "A considered journey to Makkah and Madinah",
     "description": "Plan your Umrah around your dates, budget, and pace. Compare accommodation, transport, and practical support before choosing the itinerary that suits you.",
@@ -28,7 +28,7 @@ export const services: ServiceItem[] = [
   },
   {
     "id": "hajj-enquiries",
-    "image": "/travel/madinah.jpg",
+    "image": "/travel/hajj.webp",
     "title": "Hajj Enquiries",
     "subtitle": "Prepare for the journey of a lifetime",
     "description": "Start with a careful discussion of the current Hajj season, eligibility, and authorised arrangements. Places, permits, and services must be confirmed through the applicable official booking route.",
@@ -44,7 +44,7 @@ export const services: ServiceItem[] = [
   },
   {
     "id": "family-umrah",
-    "image": "/travel/makkah.jpg",
+    "image": "/travel/madinah.webp",
     "title": "Family Umrah",
     "subtitle": "Travel together with thoughtful planning",
     "description": "Plan a family Umrah with room arrangements, manageable transfers, and a pace suited to children and older relatives. Tell us about your group so the practical details can be discussed early.",
@@ -60,7 +60,7 @@ export const services: ServiceItem[] = [
   },
   {
     "id": "group-umrah",
-    "image": "/travel/madinah.jpg",
+    "image": "/travel/madinah.webp",
     "title": "Group Umrah",
     "subtitle": "Shared journeys with a clear itinerary",
     "description": "Explore group travel options with a defined departure plan and shared arrangements. Group size, language support, and any tour leader services are confirmed in your quotation.",
@@ -76,7 +76,7 @@ export const services: ServiceItem[] = [
   },
   {
     "id": "private-umrah",
-    "image": "/travel/makkah.jpg",
+    "image": "/travel/makkah.webp",
     "title": "Private Umrah",
     "subtitle": "A journey planned around your pace",
     "description": "Discuss a private itinerary for your household or small group, with flexible travel dates and preferred accommodation. Each requested service is checked for availability before confirmation.",
@@ -92,7 +92,7 @@ export const services: ServiceItem[] = [
   },
   {
     "id": "makkah-madinah-stays",
-    "image": "/travel/madinah.jpg",
+    "image": "/travel/madinah.webp",
     "title": "Makkah & Madinah Stays",
     "subtitle": "Accommodation choices for your journey",
     "description": "Compare hotel options by location, room type, budget, and accessibility. Exact hotel names, availability, and distance information must be confirmed before you book.",
@@ -108,7 +108,7 @@ export const services: ServiceItem[] = [
   },
   {
     "id": "flights-transfers",
-    "image": "/travel/makkah.jpg",
+    "image": "/travel/hajj.webp",
     "title": "Flights & Transfers",
     "subtitle": "Connect every stage of your itinerary",
     "description": "Coordinate flight options and ground travel for a more organised journey. Review baggage allowances, transit arrangements, and transfer details with the confirmed providers.",
@@ -124,7 +124,7 @@ export const services: ServiceItem[] = [
   },
   {
     "id": "visa-assistance",
-    "image": "/travel/madinah.jpg",
+    "image": "/travel/makkah.webp",
     "title": "Visa Assistance",
     "subtitle": "Practical help with the application process",
     "description": "Discuss the documents and application steps relevant to your proposed journey. Assistance does not guarantee approval; visa decisions are made by the relevant authorities.",
@@ -140,7 +140,7 @@ export const services: ServiceItem[] = [
   },
   {
     "id": "ziyarat",
-    "image": "/travel/makkah.jpg",
+    "image": "/travel/ramadan.webp",
     "title": "Ziyarat Enquiries",
     "subtitle": "Discover places of Islamic heritage",
     "description": "Ask about local ziyarat options in Makkah and Madinah. Visits, transport, guide availability, and access are subject to local conditions and the confirmed itinerary.",
@@ -156,7 +156,7 @@ export const services: ServiceItem[] = [
   },
   {
     "id": "ramadan-umrah",
-    "image": "/travel/madinah.jpg",
+    "image": "/travel/ramadan.webp",
     "title": "Ramadan Umrah",
     "subtitle": "Plan ahead for a special time",
     "description": "Enquire early about Ramadan travel dates, hotel preferences, and room arrangements. Busy periods can affect availability, transport, and pricing, so all details are confirmed in writing.",
@@ -172,7 +172,7 @@ export const services: ServiceItem[] = [
   },
   {
     "id": "muslim-friendly-holidays",
-    "image": "/travel/makkah.jpg",
+    "image": "/travel/makkah.webp",
     "title": "Muslim-Friendly Holidays",
     "subtitle": "Explore with your travel preferences in mind",
     "description": "Discuss leisure travel with halal dining preferences, prayer-time flexibility, and family needs. Destination services and specific facilities are checked as part of itinerary planning.",

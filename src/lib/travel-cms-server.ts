@@ -1,4 +1,5 @@
 import { cache } from "react";
+import { optimizeCategoryImage } from "@/lib/travel-images";
 import { flightSchema, type CmsCategory, type CmsPackage, type TravelCatalogueData } from "@/lib/travel-cms-model";
 
 let lastSuccessful: { value: TravelCatalogueData; fetchedAt: number } | undefined;
@@ -13,7 +14,7 @@ export const getPublicTravelCatalogue = cache(async (): Promise<TravelCatalogueD
     if (responses.some(response => !response.ok)) return recentCatalogue();
     const [categories, packages] = await Promise.all(responses.map(response => response.json())) as [CmsCategory[], CmsPackage[]];
     if (!Array.isArray(categories) || !Array.isArray(packages)) return recentCatalogue();
-    const visibleCategories = categories.filter(category => category.published);
+    const visibleCategories = categories.filter(category => category.published).map(optimizeCategoryImage);
     const value = { categories: visibleCategories, packages: packages.filter(pkg => pkg.published && visibleCategories.some(category => category.id === pkg.category_id) && flightSchema.safeParse(pkg.options).success) };
     lastSuccessful = { value, fetchedAt: Date.now() };
     return value;

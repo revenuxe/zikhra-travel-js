@@ -53,16 +53,16 @@ export default function PricingPreview({ market = "bangalore" }: Props) {
 
         <p className="mt-5 text-center font-sans text-xs leading-relaxed text-muted-foreground">Prices and inclusions depend on travel dates, airline availability, hotel selection, room sharing, and applicable approvals. Your written quotation confirms what is included.</p>
 
-        <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row">
+        <div className="mt-8 grid grid-cols-2 gap-3">
           <Link
             href="/bangalore/travel-package-guide"
-            className="inline-flex items-center gap-2 rounded-lg border border-black/15 bg-white px-5 py-3.5 font-sans text-sm font-medium text-[#171717] transition-colors hover:border-black/40"
+            className="inline-flex min-w-0 items-center justify-center gap-2 rounded-lg border border-black/15 bg-white px-3 py-3.5 text-center font-sans text-xs font-medium text-[#171717] transition-colors hover:border-black/40 sm:px-5 sm:text-sm"
           >
             View Package Guide <ArrowUpRight className="h-4 w-4" />
           </Link>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-lg bg-[#171717] px-5 py-3.5 font-sans text-sm font-medium text-white transition-all hover:-translate-y-0.5 hover:bg-black hover:shadow-[0_10px_22px_rgba(0,0,0,0.16)]"
+            className="inline-flex min-w-0 items-center justify-center gap-2 rounded-lg bg-[#171717] px-3 py-3.5 text-center font-sans text-xs font-medium text-white transition-all hover:-translate-y-0.5 hover:bg-black hover:shadow-[0_10px_22px_rgba(0,0,0,0.16)] sm:px-5 sm:text-sm"
           >
             Request Travel Quote <ArrowUpRight className="h-4 w-4" />
           </Link>

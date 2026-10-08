@@ -27,7 +27,7 @@ function resolveSiteUrl(): string {
 export const SITE_URL = resolveSiteUrl();
 export const SITE_NAME = "Zikhra Tours & Travels";
 /** Served from `/public` for reliable social previews. */
-export const DEFAULT_OG_IMAGE_PATH = "/travel/makkah.jpg";
+export const DEFAULT_OG_IMAGE_PATH = "/travel/makkah.webp";
 
 export function absoluteUrl(path: string): string {
   if (!path) return SITE_URL;

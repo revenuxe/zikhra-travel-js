@@ -16,10 +16,10 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Makkah",
     "tagline": "Plan your stay near Masjid al-Haram",
     "description": "Plan your Umrah around your dates, budget, and pace. Compare accommodation, transport, and practical support before choosing the itinerary that suits you.",
-    "heroImage": "/travel/makkah.jpg",
+    "heroImage": "/travel/makkah.webp",
     "galleryImages": [
-      "/travel/makkah.jpg",
-      "/travel/madinah.jpg"
+      "/travel/makkah.webp",
+      "/travel/madinah.webp"
     ],
     "features": [
       "Makkah and Madinah itinerary planning",
@@ -53,10 +53,10 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Madinah",
     "tagline": "Time for reflection in Madinah",
     "description": "Compare hotel options by location, room type, budget, and accessibility. Exact hotel names, availability, and distance information must be confirmed before you book.",
-    "heroImage": "/travel/madinah.jpg",
+    "heroImage": "/travel/madinah.webp",
     "galleryImages": [
-      "/travel/makkah.jpg",
-      "/travel/madinah.jpg"
+      "/travel/makkah.webp",
+      "/travel/madinah.webp"
     ],
     "features": [
       "Named hotel options",
@@ -90,10 +90,10 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Umrah Journeys",
     "tagline": "A clear plan from departure to return",
     "description": "Discuss a private itinerary for your household or small group, with flexible travel dates and preferred accommodation. Each requested service is checked for availability before confirmation.",
-    "heroImage": "/travel/makkah.jpg",
+    "heroImage": "/travel/makkah.webp",
     "galleryImages": [
-      "/travel/makkah.jpg",
-      "/travel/madinah.jpg"
+      "/travel/makkah.webp",
+      "/travel/madinah.webp"
     ],
     "features": [
       "Flexible date enquiries",
@@ -127,10 +127,10 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Family Travel",
     "tagline": "Thoughtful arrangements for every generation",
     "description": "Plan a family Umrah with room arrangements, manageable transfers, and a pace suited to children and older relatives. Tell us about your group so the practical details can be discussed early.",
-    "heroImage": "/travel/madinah.jpg",
+    "heroImage": "/travel/madinah.webp",
     "galleryImages": [
-      "/travel/makkah.jpg",
-      "/travel/madinah.jpg"
+      "/travel/makkah.webp",
+      "/travel/madinah.webp"
     ],
     "features": [
       "Family room enquiries",
@@ -164,10 +164,10 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Ziyarat Visits",
     "tagline": "Enquire about local heritage visits",
     "description": "Ask about local ziyarat options in Makkah and Madinah. Visits, transport, guide availability, and access are subject to local conditions and the confirmed itinerary.",
-    "heroImage": "/travel/makkah.jpg",
+    "heroImage": "/travel/makkah.webp",
     "galleryImages": [
-      "/travel/makkah.jpg",
-      "/travel/madinah.jpg"
+      "/travel/makkah.webp",
+      "/travel/madinah.webp"
     ],
     "features": [
       "Makkah ziyarat options",
@@ -201,10 +201,10 @@ export const portfolioItems: PortfolioItem[] = [
     "title": "Travel Preparation",
     "tagline": "Prepare with confidence",
     "description": "Discuss the documents and application steps relevant to your proposed journey. Assistance does not guarantee approval; visa decisions are made by the relevant authorities.",
-    "heroImage": "/travel/madinah.jpg",
+    "heroImage": "/travel/madinah.webp",
     "galleryImages": [
-      "/travel/makkah.jpg",
-      "/travel/madinah.jpg"
+      "/travel/makkah.webp",
+      "/travel/madinah.webp"
     ],
     "features": [
       "Application checklist discussion",

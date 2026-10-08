@@ -93,7 +93,7 @@ const posts = [
         ]
       }
     ],
-    "mainImageUrl": "/travel/makkah.jpg",
+    "mainImageUrl": "/travel/makkah.webp",
     "authorName": "Zikhra Travel Team"
   },
   {
@@ -188,7 +188,7 @@ const posts = [
         ]
       }
     ],
-    "mainImageUrl": "/travel/madinah.jpg",
+    "mainImageUrl": "/travel/madinah.webp",
     "authorName": "Zikhra Travel Team"
   },
   {
@@ -283,7 +283,7 @@ const posts = [
         ]
       }
     ],
-    "mainImageUrl": "/travel/makkah.jpg",
+    "mainImageUrl": "/travel/makkah.webp",
     "authorName": "Zikhra Travel Team"
   }
 ];

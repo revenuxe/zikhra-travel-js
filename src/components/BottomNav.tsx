@@ -30,9 +30,9 @@ const BottomNav = () => {
 
   const navItems: NavItem[] = [
     { icon: Home, label: "Home", to: homeTo },
-    { icon: FolderKanban, label: "Journeys", to: projectsTo },
-    { icon: null, label: "WhatsApp" },
     { icon: Package, label: "Packages", to: packagesTo },
+    { icon: null, label: "WhatsApp" },
+    { icon: FolderKanban, label: "Journeys", to: projectsTo },
     { icon: Send, label: "Contact", to: "/contact" },
   ];
 

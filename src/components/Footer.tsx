@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
         <div className="my-10 h-px bg-black/10" />
         <div className="flex flex-col gap-4 font-sans text-xs text-[#777] sm:flex-row sm:items-center sm:justify-between">
-          <p>Â© 2026 Zikhra Tours & Travels. All rights reserved.</p>
+          <p>© 2026 Zikhra Tours & Travels. All rights reserved.</p>
           <div className="hide-scrollbar flex min-w-0 shrink-0 flex-nowrap gap-4 overflow-x-auto whitespace-nowrap pb-1 text-[11px] sm:gap-6 sm:text-xs"><Link href="/blog" className="hover:text-black">Blog</Link><Link href="/privacy" className="hover:text-black">Privacy Policy</Link><Link href="/terms" className="hover:text-black">Terms & Conditions</Link><Link href="/contact" className="hover:text-black">Contact</Link></div>
         </div>
       </div>

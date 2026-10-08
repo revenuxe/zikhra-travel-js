@@ -201,6 +201,51 @@
 .travel-brands-marquee:focus-within .travel-brands-track {
   animation-play-state: paused;
 }
+
+@keyframes navigation-spin {
+  to { transform: rotate(360deg); }
+}
+
+.navigation-loader {
+  position: fixed;
+  z-index: 200;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(2px);
+  animation: nav-overlay-in 180ms ease-out both;
+}
+
+.navigation-loader__content {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0.85rem;
+  padding: 0.7rem 0.9rem;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  color: #171717;
+  font-family: Outfit, system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.navigation-loader__spinner {
+  display: block;
+  width: 1.05rem;
+  height: 1.05rem;
+  border: 2px solid rgba(0, 0, 0, 0.16);
+  border-top-color: #171717;
+  border-radius: 999px;
+  animation: navigation-spin 650ms linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navigation-loader__spinner { animation: none; }
+}
 @media (prefers-reduced-motion: reduce) {
   .travel-brands-track { animation: none; }
 }

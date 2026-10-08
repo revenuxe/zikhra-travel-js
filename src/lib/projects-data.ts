@@ -26,7 +26,7 @@ export const projects: ProjectItem[] = [
     "location": "Makkah & Madinah, Saudi Arabia",
     "budget": "Request a current quote",
     "duration": "Dates on request",
-    "heroImage": "/travel/makkah.jpg",
+    "heroImage": "/travel/makkah.webp",
     "description": "Plan your Umrah around your dates, budget, and pace. Compare accommodation, transport, and practical support before choosing the itinerary that suits you. This is an illustrative itinerary, not a record of a completed trip. Dates, length of stay, hotels, and all services are confirmed in your individual quotation.",
     "highlights": [
       "Makkah and Madinah itinerary planning",
@@ -59,7 +59,7 @@ export const projects: ProjectItem[] = [
     "location": "Makkah & Madinah, Saudi Arabia",
     "budget": "Request a current quote",
     "duration": "Dates on request",
-    "heroImage": "/travel/madinah.jpg",
+    "heroImage": "/travel/madinah.webp",
     "description": "Plan a family Umrah with room arrangements, manageable transfers, and a pace suited to children and older relatives. Tell us about your group so the practical details can be discussed early. This is an illustrative itinerary, not a record of a completed trip. Dates, length of stay, hotels, and all services are confirmed in your individual quotation.",
     "highlights": [
       "Family room enquiries",
@@ -92,7 +92,7 @@ export const projects: ProjectItem[] = [
     "location": "Makkah & Madinah, Saudi Arabia",
     "budget": "Request a current quote",
     "duration": "Dates on request",
-    "heroImage": "/travel/makkah.jpg",
+    "heroImage": "/travel/makkah.webp",
     "description": "Discuss a private itinerary for your household or small group, with flexible travel dates and preferred accommodation. Each requested service is checked for availability before confirmation. This is an illustrative itinerary, not a record of a completed trip. Dates, length of stay, hotels, and all services are confirmed in your individual quotation.",
     "highlights": [
       "Flexible date enquiries",
@@ -125,7 +125,7 @@ export const projects: ProjectItem[] = [
     "location": "Makkah & Madinah, Saudi Arabia",
     "budget": "Request a current quote",
     "duration": "Dates on request",
-    "heroImage": "/travel/madinah.jpg",
+    "heroImage": "/travel/madinah.webp",
     "description": "Enquire early about Ramadan travel dates, hotel preferences, and room arrangements. Busy periods can affect availability, transport, and pricing, so all details are confirmed in writing. This is an illustrative itinerary, not a record of a completed trip. Dates, length of stay, hotels, and all services are confirmed in your individual quotation.",
     "highlights": [
       "Ramadan date enquiries",
@@ -158,7 +158,7 @@ export const projects: ProjectItem[] = [
     "location": "Makkah & Madinah, Saudi Arabia",
     "budget": "Request a current quote",
     "duration": "Dates on request",
-    "heroImage": "/travel/makkah.jpg",
+    "heroImage": "/travel/makkah.webp",
     "description": "Explore group travel options with a defined departure plan and shared arrangements. Group size, language support, and any tour leader services are confirmed in your quotation. This is an illustrative itinerary, not a record of a completed trip. Dates, length of stay, hotels, and all services are confirmed in your individual quotation.",
     "highlights": [
       "Group departure enquiries",
@@ -191,7 +191,7 @@ export const projects: ProjectItem[] = [
     "location": "Destination on request",
     "budget": "Request a current quote",
     "duration": "Dates on request",
-    "heroImage": "/travel/madinah.jpg",
+    "heroImage": "/travel/madinah.webp",
     "description": "Discuss leisure travel with halal dining preferences, prayer-time flexibility, and family needs. Destination services and specific facilities are checked as part of itinerary planning. This is an illustrative itinerary, not a record of a completed trip. Dates, length of stay, hotels, and all services are confirmed in your individual quotation.",
     "highlights": [
       "Destination and budget discussion",

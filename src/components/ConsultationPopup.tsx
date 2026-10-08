@@ -65,7 +65,7 @@ const ConsultationPopup = () => {
         {/* Hero Image */}
           <div className="relative h-36 overflow-hidden">
           <img
-            src={"/travel/makkah.jpg"}
+            src={"/travel/makkah.webp"}
             alt="Plan an Umrah journey with Zikhra Tours & Travels"
             className="w-full h-full object-cover"
           />

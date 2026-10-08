@@ -1,21 +1,20 @@
-import { projectTypes as journeyTypes } from "@/lib/project-types-data";
 import Link from "next/link";
+import { serviceImageSrcSet } from "@/lib/travel-images";
 import type { MarketId } from "@/lib/market-types";
 import { getMarketCopy } from "@/lib/market-copy";
 import { serviceDetailPath } from "@/lib/marketing-paths";
 
 const projectTypes = [
-  { name: "Visa Assistance", slug: "visa-assistance", desc: "Help with documents and application steps" },
-  { name: "Hotel Stays", slug: "makkah-madinah-stays", desc: "Accommodation options in Makkah and Madinah" },
-  { name: "Flights & Transfers", slug: "flights-transfers", desc: "Connect each stage of your journey" },
-  { name: "Ziyarat Visits", slug: "ziyarat", desc: "Explore places of Islamic heritage" },
-].map((item, index) => ({ ...item, image: journeyTypes[index].heroImage }));
+  { name: "Visa Assistance", slug: "visa-assistance", desc: "Help with documents and application steps", image: "/travel/makkah.webp", alt: "The Kaaba at Masjid al-Haram in Makkah" },
+  { name: "Hotel Stays", slug: "makkah-madinah-stays", desc: "Accommodation options in Makkah and Madinah", image: "/travel/madinah.webp", alt: "Masjid an-Nabawi in Madinah" },
+  { name: "Flights & Transfers", slug: "flights-transfers", desc: "Connect each stage of your journey", image: "/travel/hajj.webp", alt: "The Kaaba and pilgrims in Makkah at night" },
+  { name: "Ziyarat Visits", slug: "ziyarat", desc: "Explore places of Islamic heritage", image: "/travel/ramadan.webp", alt: "The Kaaba at Masjid al-Haram in Makkah" },
+];
 
 type Props = { market?: MarketId };
 
 const ProjectTypeSection = ({ market = "bangalore" }: Props) => {
   const copy = getMarketCopy(market);
-  const city = "Bangalore";
   return (
     <section className="px-5 py-14 md:px-8 md:py-16">
       <div className="text-center mb-10">
@@ -34,13 +33,16 @@ const ProjectTypeSection = ({ market = "bangalore" }: Props) => {
             <div className="relative w-full aspect-[4/3] max-h-32 overflow-hidden md:max-h-none">
               <img
                 src={pt.image}
-                alt={`${pt.name} travel planning ${city}`}
+                srcSet={serviceImageSrcSet(pt.image)}
+                sizes="(min-width: 1280px) 300px, (min-width: 768px) 23vw, 46vw"
+                alt={pt.alt}
+                decoding="async"
                 loading="lazy"
-                width={800}
-                height={1024}
+                width={640}
+                height={480}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent" />
             </div>
             <div className="relative z-10 -mt-3 w-full rounded-t-[1rem] bg-white p-4 md:p-6">
               <h3 className="mb-1 font-sans text-sm font-medium text-[#171717] md:text-lg">{pt.name}</h3>
