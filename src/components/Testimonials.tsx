@@ -19,7 +19,7 @@ const Testimonials = ({ market = "bangalore" }: Props) => {
         <h2 className="font-serif text-3xl md:text-4xl gold-text">{copy.testimonialsTitle}</h2>
       </div>
 
-      <div className="max-w-md mx-auto text-center">
+      <div className="mx-auto max-w-md text-center md:hidden">
         <div className="flex justify-center gap-1 mb-5">
           {Array.from({ length: testimonials[active].rating }).map((_, i) => (
             <Star key={i} className="w-4 h-4 fill-gold text-gold" />
@@ -47,6 +47,24 @@ const Testimonials = ({ market = "bangalore" }: Props) => {
             />
           ))}
         </div>
+      </div>
+
+      <div className="mx-auto hidden max-w-6xl grid-cols-3 gap-5 md:grid">
+        {testimonials.map((testimonial) => (
+          <article key={`${testimonial.name}-${testimonial.location}`} className="flex min-h-64 flex-col rounded-2xl border border-border/50 bg-card p-7 text-center shadow-[0_10px_24px_rgba(0,0,0,0.055)]">
+            <div className="mb-5 flex justify-center gap-1">
+              {Array.from({ length: testimonial.rating }).map((_, i) => <Star key={i} className="h-4 w-4 fill-gold text-gold" />)}
+            </div>
+            <p className="font-sans text-base italic leading-relaxed text-foreground/90">&ldquo;{testimonial.quote}&rdquo;</p>
+            <div className="mt-auto pt-6">
+              <div className="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full gold-gradient">
+                <span className="font-serif text-sm text-primary-foreground">{testimonial.name[0]}</span>
+              </div>
+              <p className="font-sans text-sm text-gold">{testimonial.name}</p>
+              <p className="mt-0.5 font-sans text-xs text-muted-foreground">{testimonial.location}</p>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );

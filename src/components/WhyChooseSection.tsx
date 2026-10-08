@@ -16,7 +16,7 @@ const WhyChooseSection = ({ market = "bangalore" }: Props) => {
         <h2 className="font-serif text-3xl md:text-4xl gold-text">{copy.whyTitle}</h2>
       </div>
 
-      <div className="flex flex-col gap-4 max-w-lg mx-auto">
+      <div className="mx-auto grid max-w-5xl gap-4 md:grid-cols-2">
         {points.map((pt) => (
           <div key={pt.title} className="flex items-start gap-4 p-5 rounded-2xl bg-card border border-border/50">
             <div className="w-10 h-10 rounded-full gold-gradient flex items-center justify-center flex-shrink-0">
