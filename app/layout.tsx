@@ -3,7 +3,7 @@ import "./globals.css";
 import Providers from "./providers";
 import { DEFAULT_OG_IMAGE_PATH, pageOpenGraph, SITE_NAME, SITE_URL, twitterSummaryLarge } from "@/lib/seo";
 
-const defaultTitle = "Tours and Travels in Bangalore | Zikhra Tours & Travels";
+const defaultTitle = "Umrah & Hajj Packages | Zikhra Tours & Travels";
 const defaultDescription =
   "Explore Umrah packages, Hajj guidance and family travel with Zikhra Tours and Travels in RT Nagar, Bangalore. Compare flights, prices and departure batches.";
 

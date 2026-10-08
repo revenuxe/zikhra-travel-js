@@ -17,7 +17,7 @@ import { BANGALORE_CORE_KEYWORDS, BANGALORE_COST_KEYWORDS, BANGALORE_SERVICE_KEY
 export const dynamic = "force-static";
 export const revalidate = 86400;
 
-const homeTitle = "Tours and Travels in Bangalore | Zikhra Tours & Travels";
+const homeTitle = "Umrah & Hajj Packages | Zikhra Tours & Travels";
 const homeDescription =
   "Explore Umrah packages, Hajj guidance and family travel with Zikhra Tours and Travels in RT Nagar, Bangalore. Compare flights, prices and departure batches.";
 
